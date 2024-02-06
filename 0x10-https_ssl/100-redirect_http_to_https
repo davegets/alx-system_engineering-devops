@@ -41,7 +41,7 @@ frontend devtechiuse-frontend
         default_backend devtechiuse-backend
 
 frontend devtechiuse-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/devtechiuse.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.devtechiuse.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend devtechiuse-backend
 
